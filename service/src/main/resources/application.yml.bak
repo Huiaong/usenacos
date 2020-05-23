@@ -1,0 +1,14 @@
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+
+## Dubbo 服务提供者配置
+dubbo:
+  application:
+    logger: slf4j
+    name: zlf-provider
+  registry:
+    address:  nacos://127.0.0.1:8848
+  protocol:
+    name: dubbo
+  timeout: 10000
